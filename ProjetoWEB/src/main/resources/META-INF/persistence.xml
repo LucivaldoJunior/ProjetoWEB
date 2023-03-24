@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="JPANovo" transaction-type="RESOURCE_LOCAL">
+        <class>com.netbiis.projetoweb.model.entity.ClienteEntity</class>
+        <class>com.netbiis.projetoweb.model.entity.CursoEntity</class>
+        <class>com.netbiis.projetoweb.model.entity.LoginEntity</class>
+        <class>com.netbiis.projetoweb.model.entity.PagamentoEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/formacaojava"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="xxrickyxd"/>
+        </properties>
+    </persistence-unit>
+</persistence>
